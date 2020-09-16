@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>課題２</h1>
+  <dl>
+    <dt>メールアドレス</dt>
+    <dd><input type="text" id="email"></dd>
+    <dt>パスワード</dt>
+    <dd><input type="password" id="password"></dd>
+  </dl>
+  <input type="button" id="login" value="LogIn" onclick="login_check()" >
+ 
+</body>
+</html>
+<script type="text/javascript">
+  function login_check() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+      if (email == '') {
+        alert('メールアドレスを入力してください');
+      } else if (email.indexOf('@') < 0) {
+        alert('メールアドレスには必ず「@」が必要です');
+	  }
+      if (password == '') {
+        alert('パスワードを入力してください');
+      } else if (password.length < 6) {
+        alert('パスワードは6文字以上です');
+      }  
+  };
+</script>
