@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- デフォルトのテーマ  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="kadai04c.css">
+</head>
+<body>
+  <h1>jQueryのデートピッカープラグイン</h1>
+<div class="flatpickr input-group" data-id="strap"> 
+  <input class="flatpickr" id="date_picker" type="text" placeholder="Select Date" data-input>
+  <a class="input-button" title="toggle" data-toggle>
+    <i class="material-icons" src="./img/calendar_today.png">date_range</i>
+  </a>
+  <a class="input-button" title="clear" data-clear>
+    <i class="material-icons" src="./img/clear.png">clear</i>
+  </a>
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- デートピッカー用プラグインの読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.min.js"></script>
+  <!-- デートピッカーの日本語化用JSの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <!-- 自作JavaScriptの読み込み -->
+  <script src="kadai04c.js"></script>
+</div>
+</body>
+</html>
